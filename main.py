@@ -99,13 +99,16 @@ def plot_the_loss_curve(epochs, rmse):
 my_label=[]
 my_feature=[]
 
-with open('dataset/global_total.csv', 'r') as csvfile:
-    plots= csv.reader(csvfile, delimiter=',')
-    x_value = 0.0
-    for row in plots:
-        my_label.append(float(x_value))
-        my_feature.append(float(row[0]))
-        x_value += 1.0
+# import data set from git hub repos
+url_datasetGitHub = 'https://raw.githubusercontent.com/hendradarwin/covid-19-prediction/master/dataset/global_total.csv'
+df1 = pd.read_csv(url_datasetGitHub)
+
+plots= csv.reader(df1, delimiter=',')
+x_value = 0.0
+for row in plots:
+    my_label.append(float(x_value))
+    my_feature.append(float(row[0]))
+    x_value += 1.0
 
 
 # show the default graph
