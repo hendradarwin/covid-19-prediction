@@ -10,7 +10,8 @@ We want predict case number in the future based on previous data
 
 ## Data Source
 
-[https://www.kaggle.com/atilamadai/covid19/data](https://www.kaggle.com/atilamadai/covid19/data)
+[https://data.world/markmarkoh/coronavirus-data](https://data.world/markmarkoh/coronavirus-data)
+[https://www.kaggle.com/atilamadai/covid19/data](https://www.kaggle.com/atilamadai/covid19/data) - NOT USED
 
 
 ## Prerequisite
